@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ogame expedition planner</title>
+    <style>
+      
+      html{
+        background-color: #415a77;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #415a77;
+        margin: 0;
+        padding: 20px;
+        width: 250px;
+        height: auto;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      }
+
+      #message {
+        margin-bottom: 15px;
+        font-size: 14px;
+        color: #333;
+      }
+
+    #validar {
+      box-shadow:inset 0px 1px 0px 0px #54a3f7;
+      background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+      background-color:#007dc1;
+      border-radius:17px;
+      border:1px solid #124d77;
+      display:block;
+      width: 100%;
+      cursor:pointer;
+      color:#ffffff;
+      font-family:Arial;
+      font-size:25px;
+      padding:6px 24px;
+      text-decoration:none;
+      text-shadow:0px 1px 0px #154682;
+    }
+    #validar:hover {
+      background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+      background-color:#0061a7;
+    }
+    #validar:active {
+      position:relative;
+      top:1px;
+    }
+
+
+      
+      .nave {
+        border: 15px;
+      }
+
+      .nave label{
+        font-weight: bold;
+        color: rgb(33, 30, 44);
+        font-size: 15px;
+      }
+
+      .nave input[type="text"] {
+        width: 100%;
+        padding: 5px;
+        border-radius: 6px;
+        background-color: #778da9;
+        border: 1px solid #041148;
+        font-size: 13px;
+        color: black;
+      }
+      input::placeholder {
+        font-weight: bold;
+        opacity: 0.5;
+        color: rgb(33, 30, 44);
+        }
+
+      form{
+        margin-top: 10px;
+      }  
+    </style>
+  </head>
+  <body>
+    <button id="validar">Validar</button>
+    <form id="flota-form">
+      <div class="nave">
+        <label for="cazadoresLigeros">Cazadores Ligeros</label>
+        <input type="text" id="inputCazadoresLigeros" placeholder="max Cazadores Ligeros">
+      </div>
+
+      <div class="nave">
+        <label for="cazadoresPesados">Cazadores Pesados</label>
+        <input type="text" id="inputCazadoresPesados" placeholder="max Cazadores Pesados">
+      </div>
+
+      <div class="nave">
+        <label for="cruceros">Cruceros</label>
+        <input type="text" id="inputCruceros" placeholder="max Cruceros">
+      </div>
+
+      <div class="nave">
+        <label for="navesBatalla">Naves Batalla</label>
+        <input type="text" id="inputNavesBatalla" placeholder="max Naves Batalla">
+      </div>
+
+      <div class="nave">
+        <label for="acorazados">Acorazados</label>
+        <input type="text" id="inputAcorazados" placeholder="max Acorazados">
+      </div>
+
+      <div class="nave">
+        <label for="bombarderos">Bombarderos</label>
+        <input type="text" id="inputBombarderos" placeholder="max Bombarderos">
+      </div>
+
+      <div class="nave">
+        <label for="destructores">Destructores</label>
+        <input type="text" id="inputDestructores" placeholder="max Destructores">
+      </div>
+
+      <div class="nave">
+        <label for="estrellasDeLaMuerte">Estrellas de la Muerte</label>
+        <input type="text" id="inputEstrellasDeLaMuerte" placeholder="max Estrellas de la Muerte">
+      </div>
+
+      <div class="nave">
+        <label for="segadores">Segadores</label>
+        <input type="text" id="inputSegadores" placeholder="max Segadores">
+      </div>
+
+      <div class="nave">
+        <label for="exploradores">Exploradores</label>
+        <input type="text" id="inputExploradores" placeholder="max Exploradores">
+      </div>
+
+      <div class="nave">
+        <label for="navesCargaLigera">Naves Carga Ligera</label>
+        <input type="text" id="inputNavesCargaLigera" placeholder="max Naves Carga Ligera">
+      </div>
+
+      <div class="nave">
+        <label for="navesCargaPesada">Naves Carga Pesada</label>
+        <input type="text" id="inputNavesCargaPesada" placeholder="max Naves Carga Pesada">
+      </div>
+
+      <div class="nave">
+        <label for="sondas">Sondas</label><br/>
+        <input type="text" id="inputSondas" placeholder="max Sondas">
+      </div>
+    </form>
+    <script src="popup.js"></script>
+  </body>
+</html>

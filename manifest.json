@@ -1,0 +1,18 @@
+{
+    "name": "OGameExpeditionPlanner",
+    "version": "3.0",
+    "manifest_version": 3,
+    "description": "Rellena tu envio de flota por ti. (Numero de naves / expediciones disponibles)",
+
+    "action": {
+        "default_title": "AÑADIR FLOTA",
+        "default_popup": "popup.html",
+        "default_icon": "icon_128_128.png"
+    },
+
+    "permissions": [
+        "scripting",
+        "activeTab",
+        "storage"
+    ]
+}
